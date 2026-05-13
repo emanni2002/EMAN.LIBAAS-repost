@@ -20,31 +20,61 @@ if (newsletterForm) {
     });
 }
 
-// Mobile Menu Toggle
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+// EMAN LIBAAS - Premium Interactions
 
-if (hamburger && navLinks) {
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const reveals = document.querySelectorAll('.reveal');
+
+    // Scroll Effect for Navbar
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile Menu Toggle
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        // Change icon
         const icon = hamburger.querySelector('i');
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-xmark');
+        if (navLinks.classList.contains('active')) {
+            icon.classList.replace('fa-bars-staggered', 'fa-xmark');
+        } else {
+            icon.classList.replace('fa-xmark', 'fa-bars-staggered');
+        }
     });
 
-    // Close menu when link is clicked
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            const icon = hamburger.querySelector('i');
-            icon.classList.add('fa-bars');
-            icon.classList.remove('fa-xmark');
+    // Reveal on Scroll Initialization
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target); // Reveal only once
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // Smooth Scroll for Internal Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                navLinks.classList.remove('active');
+            }
         });
     });
-}
-
-// Function to handle shop redirection (legacy support)
-function goToShop() {
-    window.location.href = "shop.html";
-}
+});

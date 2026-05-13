@@ -16,13 +16,13 @@
 <body>
 
     <!-- NAVIGATION -->
-    <nav id="navbar">
+    <nav id="navbar" class="glass">
         <div class="logo">
             <h1>EMAN.LIBAAS</h1>
         </div>
 
         <button class="hamburger" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
         <ul class="nav-links" id="nav-links">
@@ -34,10 +34,10 @@
     </nav>
 
     <!-- CONTACT HERO -->
-    <section class="hero" style="height: 40vh; min-height: 300px; padding-top: 120px;">
-        <div class="container text-center">
-            <span class="subtitle">Connect With Us</span>
-            <h2>Get In Touch</h2>
+    <section class="hero glass" style="min-height: 40vh; padding-top: 140px; background: var(--clr-secondary);">
+        <div class="container text-center reveal">
+            <span class="subtitle">Personal Assistance</span>
+            <h2>Get in Touch</h2>
         </div>
     </section>
 
@@ -45,42 +45,51 @@
     <section class="contact-section">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
-                    <span class="subtitle">Customer Support</span>
-                    <h2>How Can We Help?</h2>
-                    <p class="mb-2">Whether you have a question about our latest collection, need help with an order, or just want to share some feedback, we're here to listen. Our team typically responds within 24 hours.</p>
+                <div class="about-text reveal">
+                    <span class="subtitle">Concierge</span>
+                    <h2>How Can We <br>Help You?</h2>
+                    <p class="mb-2">Our team is dedicated to providing you with a seamless experience. Whether it's a styling query or an order update, we are here for you.</p>
                     
                     <div class="contact-info mt-2">
-                        <div class="info-item mb-1" style="display: flex; align-items: center; gap: 15px;">
-                            <i class="fa-solid fa-location-dot" style="color: var(--clr-accent);"></i>
-                            <span>123 Fashion Ave, Karachi, Pakistan</span>
+                        <div class="info-item mb-1 reveal delay-1" style="display: flex; align-items: center; gap: 20px;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--clr-accent); font-size: 1.2rem;"></i>
+                            <div >
+                                <h4 style="font-size: 0.8rem; letter-spacing: 1px; color: var(--clr-accent);">Studio</h4>
+                                <span style="font-size: 0.9rem;">123 Fashion Ave, Karachi, PK</span>
+                            </div>
                         </div>
-                        <div class="info-item mb-1" style="display: flex; align-items: center; gap: 15px;">
-                            <i class="fa-solid fa-phone" style="color: var(--clr-accent);"></i>
-                            <span>+92 300 1234567</span>
+                        <div class="info-item mb-1 reveal delay-2" style="display: flex; align-items: center; gap: 20px;">
+                            <i class="fa-solid fa-phone" style="color: var(--clr-accent); font-size: 1.2rem;"></i>
+                            <div>
+                                <h4 style="font-size: 0.8rem; letter-spacing: 1px; color: var(--clr-accent);">Call Us</h4>
+                                <span style="font-size: 0.9rem;">+92 300 1234567</span>
+                            </div>
                         </div>
-                        <div class="info-item mb-1" style="display: flex; align-items: center; gap: 15px;">
-                            <i class="fa-solid fa-envelope" style="color: var(--clr-accent);"></i>
-                            <span>support@emanlibaas.com</span>
+                        <div class="info-item mb-1 reveal delay-3" style="display: flex; align-items: center; gap: 20px;">
+                            <i class="fa-solid fa-envelope" style="color: var(--clr-accent); font-size: 1.2rem;"></i>
+                            <div>
+                                <h4 style="font-size: 0.8rem; letter-spacing: 1px; color: var(--clr-accent);">Email</h4>
+                                <span style="font-size: 0.9rem;">concierge@emanlibaas.com</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-form-container glass" style="padding: 50px;">
+                <div class="contact-form-container reveal delay-1">
                     <form class="contact-form">
                         <div class="form-group mb-1">
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Full Name</label>
-                            <input type="text" placeholder="Enter your name" style="width: 100%; padding: 15px; background: white; border: 1px solid #ddd; outline: none;" required>
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Your Name" required>
                         </div>
                         <div class="form-group mb-1">
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Email Address</label>
-                            <input type="email" placeholder="Enter your email" style="width: 100%; padding: 15px; background: white; border: 1px solid #ddd; outline: none;" required>
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group mb-2">
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Message</label>
-                            <textarea rows="5" placeholder="How can we help you?" style="width: 100%; padding: 15px; background: white; border: 1px solid #ddd; outline: none; resize: none;" required></textarea>
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="How can we assist you?" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
                     </form>
                 </div>
             </div>
@@ -91,51 +100,54 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col footer-about">
+                <div class="footer-col footer-about reveal">
                     <div class="logo mb-2">
-                        <h1 style="color: white;">EMAN.LIBAAS</h1>
+                        <h1 style="color: white; letter-spacing: 10px;">EMAN.LIBAAS</h1>
                     </div>
-                    <p>Elevating ethnic fashion through premium craftsmanship and timeless designs. We bring the best of tradition to the modern world.</p>
+                    <p>Redefining ethnic elegance. We bridge the gap between soulful tradition and modern sophistication through premium apparel.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
-                <div class="footer-col footer-links">
-                    <h4>Shop</h4>
+                <div class="footer-col footer-links reveal delay-1">
+                    <h4>Collections</h4>
                     <ul>
+                        <li><a href="#">The Lawn Edit</a></li>
+                        <li><a href="#">Luxury Silk</a></li>
+                        <li><a href="#">Bridal Couture</a></li>
                         <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Lawn Collection</a></li>
-                        <li><a href="#">Luxury Pre-order</a></li>
-                        <li><a href="#">Sale</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col footer-links">
-                    <h4>Company</h4>
+                <div class="footer-col footer-links reveal delay-2">
+                    <h4>Concierge</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Our Heritage</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <div class="footer-col newsletter reveal delay-3">
+                    <h4>Join the Inner Circle</h4>
+                    <p>Subscribe for exclusive access to launches and private sales.</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit">Join</button>
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 EMAN LIBAAS. Premium Ethnic Wear. All Rights Reserved.</p>
-                <p>Designed for Excellence.</p>
+                <p>&copy; 2026 EMAN.LIBAAS. All Rights Reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>

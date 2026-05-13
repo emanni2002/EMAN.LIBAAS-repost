@@ -16,13 +16,13 @@
 <body>
 
     <!-- NAVIGATION -->
-    <nav id="navbar">
+    <nav id="navbar" class="glass">
         <div class="logo">
             <h1>EMAN.LIBAAS</h1>
         </div>
 
         <button class="hamburger" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
         <ul class="nav-links" id="nav-links">
@@ -36,25 +36,22 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="container container-flex">
-            <div class="hero-content">
-                <span class="subtitle">Elegance Redefined</span>
-                <h2>The Art of <br>Modern Tradition</h2>
-                <p>Experience the timeless beauty of premium ethnic wear, meticulously crafted for the woman who values both heritage and style.</p>
+            <div class="hero-content reveal">
+                <span class="subtitle">Premium Ethnic Couture</span>
+                <h2>Timeless <br>Tradition, <br>Modern Soul</h2>
+                <p>Meticulously crafted ethnic wear for the contemporary woman. Elevate your wardrobe with pieces that celebrate heritage through a modern lens.</p>
                 <div class="hero-btns">
-                    <a href="shop.html" class="btn btn-primary">Discover Collection</a>
-                    <a href="about.html" class="btn btn-outline">Our Story</a>
+                    <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+                    <a href="about.html" class="btn btn-outline">Our Heritage</a>
                 </div>
             </div>
 
             <div class="hero-images">
-                <div class="hero-img-box">
-                    <img src="images/pink_dress.png" alt="Eman Libaas Collection">
+                <div class="hero-img-box reveal delay-1">
+                    <img src="images/pink_dress.png" alt="Pink Premium Lawn">
                 </div>
-                <div class="hero-img-box">
-                    <img src="images/purple_dress.jpeg" alt="Eman Libaas Collection">
-                </div>
-                <div class="hero-img-box">
-                    <img src="images/beige_dress.jpeg" alt="Eman Libaas Collection">
+                <div class="hero-img-box reveal delay-2">
+                    <img src="images/purple_dress.jpeg" alt="Royal Orchid Collection">
                 </div>
             </div>
         </div>
@@ -63,18 +60,18 @@
     <!-- FEATURED COLLECTION -->
     <section class="featured">
         <div class="container">
-            <div class="section-title text-center">
-                <span class="subtitle">Curated For You</span>
-                <h2>Featured Collection</h2>
+            <div class="section-title text-center reveal">
+                <span class="subtitle">The Edit</span>
+                <h2>Seasonal Highlights</h2>
             </div>
 
             <div class="product-grid">
                 <!-- Product Card 1 -->
-                <div class="product-card">
+                <div class="product-card reveal delay-1">
                     <div class="product-img">
-                        <img src="images/pink_dress.png" alt="Pink Premium Lawn">
+                        <img src="images/pink_dress.png" alt="Rose Petal Lawn">
                         <div class="product-overlay">
-                            <span>Quick View</span>
+                            <span>Explore Details</span>
                         </div>
                     </div>
                     <div class="product-info">
@@ -84,11 +81,11 @@
                 </div>
 
                 <!-- Product Card 2 -->
-                <div class="product-card">
+                <div class="product-card reveal delay-2">
                     <div class="product-img">
-                        <img src="images/purple_dress.jpeg" alt="Purple Premium Print">
+                        <img src="images/purple_dress.jpeg" alt="Royal Orchid">
                         <div class="product-overlay">
-                            <span>Quick View</span>
+                            <span>Explore Details</span>
                         </div>
                     </div>
                     <div class="product-info">
@@ -98,11 +95,11 @@
                 </div>
 
                 <!-- Product Card 3 -->
-                <div class="product-card">
+                <div class="product-card reveal delay-3">
                     <div class="product-img">
-                        <img src="images/beige_dress.jpeg" alt="Beige Classic Cut">
+                        <img src="images/beige_dress.jpeg" alt="Desert Sand">
                         <div class="product-overlay">
-                            <span>Quick View</span>
+                            <span>Explore Details</span>
                         </div>
                     </div>
                     <div class="product-info">
@@ -117,12 +114,14 @@
     <!-- ABOUT PREVIEW -->
     <section class="about-preview">
         <div class="about-grid">
-            <div class="about-img"></div>
-            <div class="about-text">
-                <span class="subtitle">Our Craft</span>
-                <h2>Behind the Stitch</h2>
-                <p class="mb-2">Every piece at EMAN LIBAAS tells a story of craftsmanship and heritage. We source the finest fabrics and employ traditional techniques to ensure every garment is a masterpiece.</p>
-                <a href="about.html" class="btn btn-outline" style="color: white; border-color: white;">Learn More</a>
+            <div class="about-img reveal"></div>
+            <div class="about-text glass-dark reveal">
+                <span class="subtitle">Our Philosophy</span>
+                <h2>Crafted with Intent</h2>
+                <p class="mb-2">EMAN LIBAAS was born from a deep respect for artisanal traditions. Each garment is a dialogue between the past and the present, designed for those who appreciate the quiet luxury of fine craftsmanship.</p>
+                <div class="reveal delay-1">
+                    <a href="about.html" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3);">Our Story</a>
+                </div>
             </div>
         </div>
     </section>
@@ -131,51 +130,54 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col footer-about">
+                <div class="footer-col footer-about reveal">
                     <div class="logo mb-2">
-                        <h1 style="color: white;">EMAN.LIBAAS</h1>
+                        <h1 style="color: white; letter-spacing: 10px;">EMAN.LIBAAS</h1>
                     </div>
-                    <p>Elevating ethnic fashion through premium craftsmanship and timeless designs. We bring the best of tradition to the modern world.</p>
+                    <p>Redefining ethnic elegance. We bridge the gap between soulful tradition and modern sophistication through premium apparel.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
-                <div class="footer-col footer-links">
-                    <h4>Shop</h4>
+                <div class="footer-col footer-links reveal delay-1">
+                    <h4>Collections</h4>
                     <ul>
+                        <li><a href="#">The Lawn Edit</a></li>
+                        <li><a href="#">Luxury Silk</a></li>
+                        <li><a href="#">Bridal Couture</a></li>
                         <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Lawn Collection</a></li>
-                        <li><a href="#">Luxury Pre-order</a></li>
-                        <li><a href="#">Sale</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col footer-links">
-                    <h4>Company</h4>
+                <div class="footer-col footer-links reveal delay-2">
+                    <h4>Concierge</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Our Heritage</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <div class="footer-col newsletter reveal delay-3">
+                    <h4>Join the Inner Circle</h4>
+                    <p>Subscribe for exclusive access to launches and private sales.</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit">Join</button>
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 EMAN LIBAAS. Premium Ethnic Wear. All Rights Reserved.</p>
-                <p>Designed for Excellence.</p>
+                <p>&copy; 2026 EMAN.LIBAAS. All Rights Reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>

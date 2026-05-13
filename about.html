@@ -16,13 +16,13 @@
 <body>
 
     <!-- NAVIGATION -->
-    <nav id="navbar">
+    <nav id="navbar" class="glass">
         <div class="logo">
             <h1>EMAN.LIBAAS</h1>
         </div>
 
         <button class="hamburger" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
         <ul class="nav-links" id="nav-links">
@@ -34,10 +34,10 @@
     </nav>
 
     <!-- ABOUT HERO -->
-    <section class="hero" style="height: 60vh; min-height: 500px; padding-top: 120px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=2070') center/cover no-repeat;">
-        <div class="container text-center" style="color: white;">
-            <span class="subtitle" style="color: var(--clr-accent);">Discover EMAN LIBAAS</span>
-            <h2 style="color: white;">Our Story & Heritage</h2>
+    <section class="hero glass" style="min-height: 50vh; padding-top: 140px; background: var(--clr-secondary);">
+        <div class="container text-center reveal">
+            <span class="subtitle">Our Heritage</span>
+            <h2>Woven with Legacy</h2>
         </div>
     </section>
 
@@ -45,39 +45,39 @@
     <section class="story">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
-                    <span class="subtitle">Elegance in Every Stitch</span>
-                    <h2>A Legacy of Quality</h2>
-                    <p class="mb-2">Founded on the principles of timeless elegance and contemporary comfort, EMAN LIBAAS has become a beacon for those who seek the extraordinary. We believe that fashion is a form of self-expression, and our goal is to provide the canvas for your unique story.</p>
-                    <p>Our journey began with a simple vision: to bring the richness of traditional ethnic wear into the modern closet without compromising on style or quality. Today, we are proud to serve a community of women who value both heritage and modern aesthetics.</p>
+                <div class="about-text reveal">
+                    <span class="subtitle">Since 2024</span>
+                    <h2>Soulful Craftsmanship</h2>
+                    <p class="mb-2">EMAN LIBAAS is a journey back to the roots, reimagined for the modern world. We believe that ethnic wear should be more than just clothing; it should be an experience of grace and heritage.</p>
+                    <p>Our artisans work with age-old techniques to create pieces that resonate with the spirit of the contemporary woman. Quality, authenticity, and elegance are the threads that bind every collection we create.</p>
                 </div>
-                <div class="about-img" style="background-image: url('images/beige_dress.jpeg'); border-radius: 0;"></div>
+                <div class="about-img reveal delay-1" style="background-image: url('images/beige_dress.jpeg'); filter: saturate(0.8);"></div>
             </div>
         </div>
     </section>
 
     <!-- VALUES SECTION -->
-    <section class="values" style="background-color: var(--clr-primary); color: white; padding: 100px 5%;">
+    <section class="values" style="background-color: var(--clr-primary); color: white; padding: 120px 5%;">
         <div class="container">
-            <div class="section-title text-center">
-                <span class="subtitle" style="color: var(--clr-accent);">What We Stand For</span>
-                <h2 style="color: white;">Our Core Values</h2>
+            <div class="section-title text-center reveal">
+                <span class="subtitle" style="color: var(--clr-accent);">The Pillars</span>
+                <h2 style="color: white;">What Defines Us</h2>
             </div>
-            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); text-align: center;">
-                <div class="value-item">
-                    <i class="fa-solid fa-gem mb-2" style="font-size: 2.5rem; color: var(--clr-accent);"></i>
-                    <h3 style="color: white; margin-bottom: 1rem;">Quality First</h3>
-                    <p style="color: #999;">We source only the finest fabrics to ensure longevity and comfort in every piece.</p>
+            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="value-item reveal delay-1">
+                    <i class="fa-solid fa-crown mb-2" style="font-size: 2rem; color: var(--clr-accent);"></i>
+                    <h3 style="color: white; font-size: 1.2rem; letter-spacing: 2px;">Royal Quality</h3>
+                    <p style="color: #999; font-size: 0.9rem;">We use only the most exceptional fabrics, sourced for their texture, durability, and luxury feel.</p>
                 </div>
-                <div class="value-item">
-                    <i class="fa-solid fa-feather mb-2" style="font-size: 2.5rem; color: var(--clr-accent);"></i>
-                    <h3 style="color: white; margin-bottom: 1rem;">Unique Design</h3>
-                    <p style="color: #999;">Our designs are exclusive, blending classic motifs with modern silhouettes.</p>
+                <div class="value-item reveal delay-2">
+                    <i class="fa-solid fa-compass mb-2" style="font-size: 2rem; color: var(--clr-accent);"></i>
+                    <h3 style="color: white; font-size: 1.2rem; letter-spacing: 2px;">Modern Vision</h3>
+                    <p style="color: #999; font-size: 0.9rem;">Our silhouettes are designed to be relevant today, while maintaining the soul of traditional couture.</p>
                 </div>
-                <div class="value-item">
-                    <i class="fa-solid fa-leaf mb-2" style="font-size: 2.5rem; color: var(--clr-accent);"></i>
-                    <h3 style="color: white; margin-bottom: 1rem;">Sustainability</h3>
-                    <p style="color: #999;">We are committed to ethical practices and sustainable sourcing for a better future.</p>
+                <div class="value-item reveal delay-3">
+                    <i class="fa-solid fa-heart mb-2" style="font-size: 2rem; color: var(--clr-accent);"></i>
+                    <h3 style="color: white; font-size: 1.2rem; letter-spacing: 2px;">Ethical Soul</h3>
+                    <p style="color: #999; font-size: 0.9rem;">We support local artisans and practice fair production to ensure every stitch is made with respect.</p>
                 </div>
             </div>
         </div>
@@ -87,51 +87,54 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col footer-about">
+                <div class="footer-col footer-about reveal">
                     <div class="logo mb-2">
-                        <h1 style="color: white;">EMAN.LIBAAS</h1>
+                        <h1 style="color: white; letter-spacing: 10px;">EMAN.LIBAAS</h1>
                     </div>
-                    <p>Elevating ethnic fashion through premium craftsmanship and timeless designs. We bring the best of tradition to the modern world.</p>
+                    <p>Redefining ethnic elegance. We bridge the gap between soulful tradition and modern sophistication through premium apparel.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
-                <div class="footer-col footer-links">
-                    <h4>Shop</h4>
+                <div class="footer-col footer-links reveal delay-1">
+                    <h4>Collections</h4>
                     <ul>
+                        <li><a href="#">The Lawn Edit</a></li>
+                        <li><a href="#">Luxury Silk</a></li>
+                        <li><a href="#">Bridal Couture</a></li>
                         <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Lawn Collection</a></li>
-                        <li><a href="#">Luxury Pre-order</a></li>
-                        <li><a href="#">Sale</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col footer-links">
-                    <h4>Company</h4>
+                <div class="footer-col footer-links reveal delay-2">
+                    <h4>Concierge</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Our Heritage</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <div class="footer-col newsletter reveal delay-3">
+                    <h4>Join the Inner Circle</h4>
+                    <p>Subscribe for exclusive access to launches and private sales.</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit">Join</button>
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 EMAN LIBAAS. Premium Ethnic Wear. All Rights Reserved.</p>
-                <p>Designed for Excellence.</p>
+                <p>&copy; 2026 EMAN.LIBAAS. All Rights Reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
