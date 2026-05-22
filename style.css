@@ -14,12 +14,12 @@
     --clr-text: hsl(0, 0%, 15%);
     --clr-text-muted: hsl(0, 0%, 45%);
     --clr-white: hsl(0, 0%, 100%);
-    --clr-glass: rgba(255, 255, 255, 0.7);
-    --clr-glass-dark: rgba(0, 0, 0, 0.8);
+    --clr-glass: rgba(255, 255, 255, 0.8);
+    --clr-glass-dark: rgba(0, 0, 0, 0.85);
 
     /* Typography */
     --ff-heading: 'Playfair Display', serif;
-    --ff-body: 'Inter', 'Montserrat', sans-serif;
+    --ff-body: 'Montserrat', 'Inter', sans-serif;
 
     /* Spacing & Sizing */
     --container-width: 1440px;
@@ -201,11 +201,22 @@ nav.scrolled {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.logo {
+    background-color: var(--clr-primary); /* The Black "Patti" */
+    padding: 15px 30px;
+    margin-left: -8%; /* Align with screen edge if desired, or keep centered */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
 .logo h1 {
     font-size: 1.4rem;
     letter-spacing: 8px;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--clr-white); /* White text for black logo patti */
 }
 
 nav ul {
@@ -220,7 +231,7 @@ nav ul li a {
     text-transform: uppercase;
     position: relative;
     padding: 10px 0;
-    color: var(--clr-text);
+    color: var(--clr-text); /* Back to dark text for light navbar */
 }
 
 nav ul li a::after {
@@ -262,7 +273,7 @@ nav ul li a:hover {
     right: 0;
     width: 40%;
     height: 100%;
-    background: var(--clr-white);
+    background: var(--clr-white); /* Reverted to white */
     z-index: 0;
 }
 
@@ -317,7 +328,7 @@ nav ul li a:hover {
     background: none;
     border: none;
     font-size: 1.2rem;
-    color: var(--clr-primary);
+    color: var(--clr-primary); /* Back to dark for light navbar */
     z-index: 1001;
 }
 
@@ -330,7 +341,7 @@ nav ul li a:hover {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: var(--clr-white);
+        background: var(--clr-white); /* Back to white mobile menu */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -341,7 +352,7 @@ nav ul li a:hover {
 
     .nav-links.active { right: 0; }
     
-    nav ul li a { font-size: 1.5rem; letter-spacing: 5px; }
+    nav ul li a { font-size: 1.5rem; letter-spacing: 5px; color: var(--clr-text); }
 }
 
 .hero-images {
